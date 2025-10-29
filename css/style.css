@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/subset-Montserrat-Medium.woff2) format(woff2),
+    url(../fonts/subset-Montserrat-Medium.woff) format(woff);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/subset-Montserrat-SemiBold.woff2) format(woff2),
+    url(../fonts/subset-Montserrat-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/subset-Montserrat-Bold.woff2) format(woff2),
+    url(../fonts/subset-Montserrat-Bold.woff) format(woff);
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url(../fonts/subset-Spectral-SemiBold.woff2) format(woff2),
+    url(../fonts/subset-Spectral-SemiBold.woff) format(woff);
+  font-weight: 600;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1276px;
+}
+
+/* Тексты */
+
+/* Montserrat */
+.text-bd {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.text-smb {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.text-md {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.6;
+}
+
+.add-text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+/* Spectral */
+
+.headers {
+  font-family: "Spectral", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+}
+
+.sub-headers {
+  font-family: "Spectral", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* Переменные цветов */
+:root {
+  --red-color: #E30613;
+  --dark-color: #1C1C1C;
+
+}
+
+/* Заголовок */
+.header {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.header-inner {
+  justify-content: space-between;
+  display: flex;
+}
+
+.header-inner_list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 51px;
+  margin-right: 60px;
+}
+
+.header-logo {
+  margin-right: 132px;
+}
+
+.header-inner_list-item:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header-inner_list-item-note {
+  opacity: 50%;
+}
+
+.header-inner_button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 24px;
+  background-color: #1C1C1C;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #1C1C1C;
+}
+.header-inner_button:hover{
+  color: var(--red-color);
+  background-color: transparent;
+  border: 1px solid var(--red-color);
+  transition: 0.8s;
+}
+
+.sub-menu {
+  margin-top: 30px;
+  padding: 17px 63px 18px 60px;
+}
+
+.sub-menu_list {
+  display: flex;
+  gap: 115px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sub-menu_list-elem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+/* Голова */
+.head{
+  margin-bottom: 70px;
+}
+.head_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+.head_left {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 56px 80px 70px;
+  align-items: flex-start;
+}
+.head_left-title {
+  margin-bottom: 16px;
+}
+.head_left-button {
+  text-decoration: none;
+  color: white;
+  background-color: var(--red-color);
+  padding: 15px 37px;
+  margin-bottom: 95px;
+}
+.head_left-button:hover{
+  opacity: 0.6;
+  transition: 0.8s;
+}
+.head_left-p {
+  margin-bottom: 52px;
+  opacity: 0.5;
+}
+.head_left-progress-bars {
+  display: flex;
+  gap: 6px;
+}
+.head_left-progress-bar {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #DBDBDB;
+  width: 50px;
+  height: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.head_left-progress-bar-completed {
+  background-color: var(--red-color);
+  border-radius: 5px;
+}
+.head_left-progress-bar-remaining {
+  border-radius: 5px;
+}
+
+/* Сервис */
+.services {
+  margin-bottom: 56px;
+}
+.services_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.services_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+.services_left-title {
+  margin-bottom: 32px;
+  max-width: 527px;
+}
+.services_left-text {
+  max-width: 564px;
+}
+.services_left-text-p {
+  margin-bottom: 20px;
+}
+/* Услуги типографии */
+.print-services {
+}
+.print-services_title {
+  margin-bottom: 50px;
+}
+.print-services_inner {
+  display: grid;
+  list-style: none;
+  grid-template-columns:repeat(4, 1fr);
+  gap:20px;
+  grid-auto-flow: row;
+  grid-auto-rows: auto; 
+}
+.print-services_inner-card {
+  position:relative;
+  height:300px;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: 0px 0px 34px 24px;
+}
+.print-services_inner-card:nth-child(1) {
+  grid-column:1 / span 2;
+}
+
+.print-services_inner-card:nth-child(6){
+  grid-column:3 / span 2;
+}
+
