@@ -624,7 +624,17 @@ body {
   justify-content: space-between;
   margin-bottom: 48px;
 }
+.portfolio_inner-header-button{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background-color: transparent;
+  color: #E30613;
+  font-weight: 600;
+  font-family: "Montserrat" ,sans-serif;
 
+}
 .portfolio_inner-title {}
 
 .portfolio_inner-block {
