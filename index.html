@@ -34,6 +34,10 @@
               fill="currentColor" />
           </svg>
         </a>
+        <svg class="header-inner_icon-hidden" width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1H21M1 8.5H21M1 16.5H15" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" />
+        </svg>
+
       </div>
       <nav class="sub-menu">
         <ul class="sub-menu_list">
@@ -177,7 +181,7 @@
           </div>
         </div>
         <div class="contacts_form">
-          <h3 class="contacts_form-title sub-headers">Свяжитесь<br> с нами</h3>
+          <h3 class="contacts_form-title sub-headers">Свяжитесь<br class="contacts_br"> с нами</h3>
           <div class="contacts_form-block">
             <div class="contacts_form-block-input">
               <input class="contacts_form-block-input-item" type="text" name="text" required placeholder="Имя"
@@ -187,13 +191,15 @@
             </div>
             <textarea class="contacts_form-block-textarea" name="message" required placeholder="Комментарий"></textarea>
             <a href="#" class="contacts_form-block-button">Отправить</a>
-            <p class="contacts_form-block-text text-p">Нажимая «Отправить», вы соглашаетесь с политикой
+            <p class="contacts_form-block-text text-p">Нажимая «Отправить»,<br class="contacts_br-hid"> вы соглашаетесь
+              с политикой
               конфиденциальности</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="process">
     <div class="container">
       <h3 class="process_title sub-headers">Как мы работаем</h3>
@@ -358,36 +364,43 @@
       </div>
     </div>
   </section>
+
   <section class="map">
     <div class="container">
       <h3 class="map_title sub-headers">Контакты</h3>
       <div class="map_inner">
         <div class="map_inner-content">
           <h4 class="map_content-title text-smb">г. Липецк, ул. Фадеева, д. 11.</h4>
-          <p class="map_content-subtitle">Телефоны</p>
-          <ul class="map_content-list ">
-            <li class="map_content-list-item">
-              <p class="map_content-list-text">8 (4742) 43-25-36</p>
-              <a href="#">Позвонить</a>
-            </li>
-            <li class="map_content-list-item">
-              <p class="map_content-list-text">8 (4742) 37-01-18</p>
-              <a href="#">Позвонить</a>
-            </li>
-            <li class="map_content-list-item">
-              <p class="map_content-list-text">8 (4742) 37-01-14</p>
-              <a href="#">Позвонить</a>
-            </li>
-          </ul>
-          <p class="map_content-subtitle">Email</p>
-          <ul class="map_content-list">
-            <li>
-              <p class="map_content-list-text">sales@artprint48.ru</p>
-            </li>
-            <li>
-              <p class="map_content-list-text">dergunov@artprint48.ru</p>
-            </li>
-          </ul>
+          <div class="map_content">
+            <div class="map_content-block">
+              <p class="map_content-subtitle">Телефоны</p>
+              <ul class="map_content-list ">
+                <li class="map_content-list-item">
+                  <p class="map_content-list-text">8 (4742) 43-25-36</p>
+                  <a href="#">Позвонить</a>
+                </li>
+                <li class="map_content-list-item">
+                  <p class="map_content-list-text">8 (4742) 37-01-18</p>
+                  <a href="#">Позвонить</a>
+                </li>
+                <li class="map_content-list-item">
+                  <p class="map_content-list-text">8 (4742) 37-01-14</p>
+                  <a href="#">Позвонить</a>
+                </li>
+              </ul>
+            </div>
+            <div class="map_content-block">
+              <p class="map_content-subtitle">Email</p>
+              <ul class="map_content-list">
+                <li>
+                  <p class="map_content-list-text">sales@artprint48.ru</p>
+                </li>
+                <li>
+                  <p class="map_content-list-text">dergunov@artprint48.ru</p>
+                </li>
+              </ul>
+            </div>
+          </div>
           <a href="#" class="map_content-button">Заказать звонок
             <svg class="header-inner_button-icon" width="16" height="16" aria-hidden="true" focusable="false"
               viewBox="0 0 16 16" fill="none">
@@ -437,6 +450,12 @@
             <li class="footer_inner-contacts-list-elem">8 (4742) 37-01-18</li>
             <li class="footer_inner-contacts-list-elem">8 (4742) 37-01-14</li>
           </ul>
+        </div>
+        <div class="footer_inner-bottom">
+          <div class="footer_inner-copyright">
+            <p>©2025. Все права защищены</p>
+            <a href="#" class="footer_inner-link">Политика конфиденциальности</a>
+          </div>
         </div>
       </div>
     </div>
