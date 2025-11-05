@@ -141,8 +141,9 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 51px;
+  padding-top: 15px;
   margin-right: 60px;
 }
 
@@ -213,6 +214,10 @@ body {
   /* Заголовок */
   .header {
     margin-bottom: 32px;
+  }
+
+  .header-inner_list {
+    padding-top: 0;
   }
 
   .sub-menu {
@@ -290,6 +295,10 @@ body {
   align-items: flex-start;
 }
 
+.head_right {
+  padding-right: 50px;
+}
+
 .head_left-title {
   margin-bottom: 16px;
 }
@@ -340,6 +349,7 @@ body {
   .head_right {
     width: 357px;
     height: 300px;
+    padding-right: 0;
   }
 
   .head_inner {
@@ -512,6 +522,7 @@ body {
   background-image: url(../img/contacts-form.png);
   background-color: var(--red-color);
   background-repeat: no-repeat;
+  background-position: center 30px;
   padding-top: 35px;
   padding-left: 35px;
 }
@@ -570,8 +581,8 @@ body {
 
 .contacts_form-block-button {
   padding: 15px 159px;
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: var(--red-color);
   border: 1px solid white;
   text-decoration: none;
   border-radius: 3px;
@@ -580,8 +591,7 @@ body {
 }
 
 .contacts_form-block-button:hover {
-  background-color: white;
-  color: var(--red-color);
+  opacity: 0.7;
   transition: 0.8s;
 }
 
@@ -963,7 +973,7 @@ body {
 
 /* Раздел с картой*/
 .map {
-  margin-bottom: 85px;
+  margin-bottom: 165px;
   position: relative;
 }
 
@@ -1004,7 +1014,13 @@ body {
 .map_content-list-item {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 18px;
+}
+.map_content-list-item:nth-child(2){
+  gap: 26px;
+}
+.map_content-list-item:nth-child(3){
+  gap: 25px;
 }
 
 .map_content-list-text {
@@ -1020,13 +1036,12 @@ body {
 .map_content-list a {
   font-size: 12px;
   font-weight: 500;
-  color: var(--dark-color);
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--red-color);
 }
 
 .map_content-list a:hover {
-  text-decoration: underline;
-  color: var(--red-color);
+  opacity: 0.6;
   transition: 0.8s;
 }
 
@@ -1036,13 +1051,13 @@ body {
   justify-content: center;
   gap: 12px;
   padding: 15px 24px;
-  background-color: var(--dark-color);
+  background-color: var(--red-color);
   color: #fff;
   text-decoration: none;
 }
 
 .map_content-button:hover {
-  background-color: var(--red-color);
+  opacity: 0.7;
   transition: 0.8s;
 }
 
@@ -1070,11 +1085,10 @@ body {
 
 .map_inner {
   background: white;
-  padding: 40px;
-  max-width: 500px;
+  max-width: 412px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 300px;
+  margin-top: 80px;
 }
 
 @media screen and (max-width:1280px) {
@@ -1148,6 +1162,8 @@ body {
 
 .footer_inner-service-list-elem {
   font-weight: 600;
+  max-height: 20px;
+  width: 239px;
 }
 
 .footer_inner-contacts-list {
@@ -1157,8 +1173,14 @@ body {
   gap: 20px;
 }
 
-.footer_inner-contacts-list-elem {
-  font-weight: 600;
+.footer-inner_list-item-note {
+  color: #1C1C1C;
+  opacity: 0.5;
+}
+
+.footer-inner_list-item-title {
+  width: 237px;
+  margin-bottom: 8px;
 }
 
 .footer_inner-contacts-title {
@@ -1172,65 +1194,90 @@ body {
   position: absolute;
   left: 20px;
   right: 0;
-  top: 280px;
+  top: 250px;
   bottom: 20px;
+  font-size: 12px;
 }
-.footer_inner-copyright{
+
+.footer_inner-copyright {
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: #1C1C1C;
   opacity: 0.6;
 }
-.footer_inner-link{
+
+.footer_inner-link {
   color: #1C1C1C;
 }
-@media screen and (max-width:1100px){
-  .footer{
+
+@media screen and (max-width:1380px) {
+  .footer_inner-service-list-elem {
+    font-weight: 600;
+    max-height: auto;
+    width: auto;
+  }
+
+  .footer-inner_list-item-title {
+    width: auto;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .footer {
     padding: 30px;
   }
-  .footer_inner{
+
+  .footer_inner {
     flex-direction: column;
   }
-  .footer_inner-bottom{
+
+  .footer_inner-bottom {
     position: static;
   }
-  .footer_logo{
+
+  .footer_logo {
     margin-bottom: 48px;
     margin-right: 0;
   }
-  .footer_inner-service{
+
+  .footer_inner-service {
     margin-bottom: 48px;
   }
+
   .footer_inner-contacts-title,
-  .footer_inner-service-title{
+  .footer_inner-service-title {
     margin-bottom: 20px;
   }
-  .footer_inner-contacts-list{
+
+  .footer_inner-contacts-list {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer_inner-contacts{
+
+  .footer_inner-contacts {
     margin-bottom: 48px;
   }
-  .footer_inner-copyright{
+
+  .footer_inner-copyright {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .footer_inner-contacts-list-elem:nth-child(3) {
-  grid-column: 1;
-  grid-row: 3;
-}
+    grid-column: 1;
+    grid-row: 3;
+  }
 
-/* Четвертый элемент (телефон 37-01-18) - правая колонка, первая строка */
-.footer_inner-contacts-list-elem:nth-child(4) {
-  grid-column: 2;
-  grid-row: 1;
-}
+  /* Четвертый элемент (телефон 37-01-18) - правая колонка, первая строка */
+  .footer_inner-contacts-list-elem:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1;
+  }
 
-/* Пятый элемент (телефон 37-01-14) - правая колонка, вторая строка */
-.footer_inner-contacts-list-elem:nth-child(5) {
-  grid-column: 2;
-  grid-row: 2;
-}
+  /* Пятый элемент (телефон 37-01-14) - правая колонка, вторая строка */
+  .footer_inner-contacts-list-elem:nth-child(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
 
 }
