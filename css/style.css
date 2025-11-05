@@ -135,6 +135,7 @@ body {
 .header-inner {
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
 
 .header-inner_list {
@@ -184,6 +185,8 @@ body {
 }
 
 .sub-menu {
+  box-shadow: 0 4px 80px 0 rgba(9, 12, 29, 0.05);
+  background: #fff;
   margin-top: 30px;
   padding: 17px 63px 18px 60px;
 }
@@ -284,8 +287,8 @@ body {
 .head_inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #F5F5F5;
+  align-items: flex-end;
 }
 
 .head_left {
@@ -354,6 +357,7 @@ body {
 
   .head_inner {
     justify-content: center;
+    align-items: center;
   }
 }
 
@@ -670,6 +674,10 @@ body {
 
   .contacts_br-hid {
     display: inline;
+  }
+
+  .break {
+    display: block;
   }
 }
 
@@ -1016,10 +1024,12 @@ body {
   align-items: center;
   gap: 18px;
 }
-.map_content-list-item:nth-child(2){
+
+.map_content-list-item:nth-child(2) {
   gap: 26px;
 }
-.map_content-list-item:nth-child(3){
+
+.map_content-list-item:nth-child(3) {
   gap: 25px;
 }
 
@@ -1142,7 +1152,7 @@ body {
 .footer_logo {
   width: 265px;
   height: 66px;
-  margin-right: 120px;
+  margin-right: 105px;
 }
 
 .footer_inner-service-title {
@@ -1157,7 +1167,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   list-style: none;
   gap: 16px 105px;
-  margin-right: 120px;
+  margin-right: 105px;
 }
 
 .footer_inner-service-list-elem {
@@ -1189,10 +1199,12 @@ body {
   opacity: 0.6;
   margin-bottom: 32px;
 }
-
+.footer_inner-contacts-list-elem{
+  font-weight: 600;
+}
 .footer_inner-bottom {
   position: absolute;
-  left: 20px;
+  left: 0;
   right: 0;
   top: 230px;
   bottom: 20px;
