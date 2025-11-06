@@ -1372,6 +1372,9 @@ body {
 .portfolio_inner-header-button-bottom {
   display: none;
 }
+.portfolio_pager{
+  display: none;
+}
 
 @media screen and (max-width:1280px) {
   .portfolio {
