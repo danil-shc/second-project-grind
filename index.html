@@ -12,14 +12,15 @@
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a href="#"><img src="img/Logotip_ArtPrint_2 1.png" alt="Art-Print" class="header-logo"></a>
+        <a class="header-logo" href="#"><img src="img/Logotip_ArtPrint_2 1.png" alt="Art-Print"></a>
         <ul class="header-inner_list">
           <li class="header-inner_list-item">
-            <p class="header-inner_list-item-title text-smb">г. Липецк, ул. Фадеева, д. 11.</p>
+            <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">г. Липецк, ул. Фадеева, д.
+              11.</p>
             <p class="header-inner_list-item-note add-text">Пн-Пт: 9:00–18:00</p>
           </li>
           <li class="header-inner_list-item">
-            <p class="header-inner_list-item-title text-smb">sales@artprint48.ru</p>
+            <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">sales@artprint48.ru</p>
           </li>
           <li class="header-inner_list-item">
             <p class="header-inner_list-item-title text-smb">8 (4742) 43-25-36</p>
@@ -38,8 +39,16 @@
           xmlns="http://www.w3.org/2000/svg">
           <path d="M1 1H21M1 8.5H21M1 16.5H15" stroke="#1C1C1C" stroke-width="2" stroke-linecap="round" />
         </svg>
-
       </div>
+      <a href="#" class="header-inner_button header-inner_button-hid">
+        <span class="header-inner_button-title">Заказать звонок</span>
+        <svg class="header-inner_button-icon" width="16" height="16" aria-hidden="true" focusable="false"
+          viewBox="0 0 16 16" fill="none">
+          <path
+            d="M15.5477 11.7424L13.3149 9.50954C12.5174 8.71209 11.1618 9.0311 10.8428 10.0678C10.6036 10.7855 9.80611 11.1842 9.08841 11.0247C7.49352 10.626 5.34042 8.55261 4.9417 6.87797C4.70246 6.16024 5.18093 5.36279 5.89863 5.12359C6.93531 4.80461 7.25429 3.44895 6.45684 2.65151L4.224 0.418659C3.58604 -0.139553 2.6291 -0.139553 2.07089 0.418659L0.555745 1.93381C-0.959401 3.5287 0.715235 7.75516 4.46323 11.5032C8.21122 15.2511 12.4377 17.0056 14.0326 15.4106L15.5477 13.8955C16.106 13.2575 16.106 12.3006 15.5477 11.7424Z"
+            fill="currentColor" />
+        </svg>
+      </a>
       <nav class="sub-menu">
         <ul class="sub-menu_list">
           <li class="sub-menu_list-elem">
@@ -71,6 +80,7 @@
         <div class="head_left">
           <h2 class="head_left-title headers">Печать брошюр</h2>
           <span class="head_left-p text-md">Заказы любой сложности</span>
+          <img class="head_left-img" src="img/head.png" alt="projects">
           <a href="#" class="head_left-button">Оставить заявку</a>
           <div class="head_left-progress-bars">
             <div class="head_left-progress-bar">
@@ -119,31 +129,34 @@
   <section class="print-services">
     <div class="container">
       <h3 class="print-services_title sub-headers">Услуги типографии</h3>
-      <ul class="print-services_inner">
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card1.png')">
-          Самоклеющаяся<br>этикетка</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card2.png')">Этикетки <br> без
-          печати</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card3.png')">Риббоны</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card4.png')">Листовки</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card5.png')">Брошюры</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card6.png')">Бопп-пленка</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card7.png')">Постпечатная <br>
-          обработка </li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card8.png')">Печать <br> на
-          бумаге</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card9.png')">Дизайн <br> печати
-        </li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card10.png')">Допечатная
-          подготовка</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card11.png')">Бумага для
-          типографии</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card12.png')">Флексопечать</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card13.png')">Полипропиленовая
-          пленка</li>
-        <li class="print-services_inner-card text-bd" style="background-image:url('img/card14.png')">Печать <br> на
-          картоне</li>
-      </ul>
+      <div class="print-services_slider">
+        <ul class="print-services_inner">
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card1.png')">
+            Самоклеющаяся<br>этикетка</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card2.png')">Этикетки <br> без
+            печати</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card3.png')">Риббоны</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card4.png')">Листовки</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card5.png')">Брошюры</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card6.png')">Бопп-пленка</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card7.png')">Постпечатная <br>
+            обработка </li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card8.png')">Печать <br> на
+            бумаге</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card9.png')">Дизайн <br> печати
+          </li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card10.png')">Допечатная
+            подготовка</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card11.png')">Бумага для
+            типографии</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card12.png')">Флексопечать</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card13.png')">Полипропиленовая
+            пленка</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('img/card14.png')">Печать <br> на
+            картоне</li>
+        </ul>
+        <div class="services_pager"></div>
+      </div>
     </div>
   </section>
   <section class="contacts">
@@ -185,21 +198,20 @@
           <h3 class="contacts_form-title sub-headers">Свяжитесь<br class="contacts_br"> с нами</h3>
           <div class="contacts_form-block">
             <div class="contacts_form-block-input">
-              <input class="contacts_form-block-input-item" type="text" name="text" required placeholder="Имя"
-                style="margin-right: 10px;">
+              <input class="contacts_form-block-input-item" type="text" name="text" required placeholder="Имя">
               <input class="contacts_form-block-input-item" type="tel" name="phone" inputmode="tel" autocomplete="tel"
                 placeholder="Телефон">
             </div>
             <textarea class="contacts_form-block-textarea" name="message" required placeholder="Комментарий"></textarea>
             <a href="#" class="contacts_form-block-button">Отправить</a>
             <p class="contacts_form-block-text text-p"> <span class="break">Нажимая «Отправить»,</span>
-              вы соглашаетесь с политикой конфиденциальности</p>
+              вы соглашаетесь с <span class="contacts_policy">политикой конфиденциальности</span></p>
           </div>
+          <img class="contacts_img" src="img/contacts-form380.png" alt="pencil">
         </div>
       </div>
     </div>
   </section>
-
   <section class="process">
     <div class="container">
       <h3 class="process_title sub-headers">Как мы работаем</h3>
@@ -229,8 +241,8 @@
   </section>
   <section class="seo-block">
     <div class="container">
-      <h3 class="seo-block_title sub-headers">Заголовок SEO-блока</h3>
       <div class="seo-block_inner">
+        <h3 class="seo-block_title sub-headers">Заголовок SEO-блока</h3>
         <div class="seo-text-wrapper">
           <div class="seo-text-content">
             <p class="seo-text-content-p text-p">В целом, конечно, дальнейшее развитие различных форм деятельности
@@ -293,74 +305,83 @@
             </svg>
           </button>
         </div>
-        <ul class="portfolio_inner-block">
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/1.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/2.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/3.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/4.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/5.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-          <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/1.png')">
-            <div class="portfolio_inner-block-card-content">
-              <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
-              <button class="portfolio_inner-block-card-button text-smb">Подробнее
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
-                    stroke="white" stroke-width="2" stroke-linejoin="round" />
-                </svg>
-              </button>
-            </div>
-          </li>
-        </ul>
+        <div class="portfolio_slider">
+          <ul class="portfolio_inner-block">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/1.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/2.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/3.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/4.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/5.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/1.png')">
+              <div class="portfolio_inner-block-card-content">
+                <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
+                <button class="portfolio_inner-block-card-button text-smb">Подробнее
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="portfolio_pager"></div>
+          <button class="portfolio_inner-header-button portfolio_inner-header-button-bottom">Все работы
+            <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 6.72607H-4.76837e-07M19 6.72607L12.6667 0.726074M19 6.72607L12.6667 12.7261" stroke="#E30613"
+                stroke-width="2" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -416,6 +437,7 @@
       <img src="img/map.png" alt="Карта" class="map_image">
     </div>
   </section>
+
   <footer class="footer">
     <div class="container">
       <div class="footer_inner">
@@ -461,6 +483,7 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 
