@@ -905,6 +905,7 @@ body {
 
   .contacts_form-block-input {
     flex-direction: column;
+    gap: 10px;
   }
 
   .contacts_form-block-input-item:nth-child(1) {
