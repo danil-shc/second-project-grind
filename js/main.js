@@ -102,52 +102,49 @@ $(function(){
   function debounce(fn, ms){ let t; return function(){ clearTimeout(t); t = setTimeout(fn, ms); }; }
 });
 // Инициализация слайдера для блока "Услуги типографии"
-$(function(){
-  const mq = '(max-width:750px)';
-  const $list  = $('.print-services .print-services_inner');
-  const $items = $list.children('.print-services_inner-card');
-  const $pager = $('.print-services .services_pager');
+$(function () {
+  const mq = window.matchMedia('(max-width:750px)');
+  const $root = $('.print-services_slider');              // контейнер секции
 
-  function build(){
-    if(!window.matchMedia(mq).matches){   // десктоп
-      $items.addClass('is-active').css({opacity:''});
-      $pager.empty();
-      return;
-    }
+  function init() {
+    if ($root.data('ps-inited')) return;
+    const $list  = $root.find('.print-services_inner');
+    const $items = $list.children('.print-services_inner-card');
+
+    // снимок исходной сетки, чтобы потом полностью восстановить
+    $root.data('ps-html', $list.html());
+    $root.data('ps-inited', true);
+
+    // создаём пейджер
+    let $pager = $root.find('.services_pager');
+    if (!$pager.length) $pager = $('<div class="services_pager"></div>').insertAfter($list);
     $pager.empty();
-    $items.removeClass('is-active').hide();
-    $items.each(()=> $('<button type="button" class="pager-dot">').appendTo($pager));
-    setPage(0);
-  }
+    $items.each(() => $('<button type="button" class="pager-dot"></button>').appendTo($pager));
 
-  let cur = 0;
-  function setPage(i){
-    cur = i;
-    $list.addClass('is-fading');
-    setTimeout(()=>{
+    // показать первый
+    $items.hide().removeClass('is-active').eq(0).show().addClass('is-active');
+    $pager.find('.pager-dot').eq(0).addClass('is-active');
+
+    // обработчик (namespace для корректного снятия)
+    $pager.off('click.ps').on('click.ps', '.pager-dot', function () {
+      const i = $(this).index();
       $items.hide().removeClass('is-active').eq(i).show().addClass('is-active');
-      $pager.children('.pager-dot').removeClass('is-active').eq(i).addClass('is-active');
-      requestAnimationFrame(()=> $list.removeClass('is-fading'));
-    },120);
+      $pager.find('.pager-dot').removeClass('is-active').eq(i).addClass('is-active');
+    });
   }
 
-  $pager.on('click','.pager-dot',function(){ setPage($(this).index()); });
+  function destroy() {
+    if (!$root.data('ps-inited')) return;
+    const $list = $root.find('.print-services_inner');
+    // полное восстановление DOM сетки
+    $list.html($root.data('ps-html'));
+    $root.find('.services_pager').remove();     // убрать пейджер
+    $root.removeData('ps-inited').removeData('ps-html');
+  }
 
-  // свайпы
-  let sx=null;
-  $list.on('touchstart', e => { if(!window.matchMedia(mq).matches) return; sx = e.originalEvent.touches[0].clientX; });
-  $list.on('touchend',   e => {
-    if(!window.matchMedia(mq).matches || sx==null) return;
-    const dx = e.originalEvent.changedTouches[0].clientX - sx;
-    if(Math.abs(dx)>40){
-      const last = $items.length-1;
-      if(dx<0 && cur<last) setPage(cur+1);
-      if(dx>0 && cur>0)    setPage(cur-1);
-    }
-    sx=null;
-  });
+  function apply() { mq.matches ? init() : destroy(); }
 
-  build();
-  $(window).on('resize', debounce(build,120));
-  function debounce(fn,ms){ let t; return ()=>{ clearTimeout(t); t=setTimeout(fn,ms); }; }
+  // первый прогон и слежение за брейкпоинтом
+  apply();
+  (mq.addEventListener ? mq.addEventListener('change', apply) : mq.addListener(apply));
 });

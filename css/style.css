@@ -172,6 +172,7 @@ body {
   color: #fff;
   text-decoration: none;
   border: 1px solid #1C1C1C;
+  transition: 0.8s;
 }
 
 .header-inner_button:hover {
@@ -205,6 +206,7 @@ body {
   justify-content: center;
   cursor: pointer;
   gap: 8px;
+  transition: 0.8s;
 }
 
 .sub-menu_list-elem:hover {
@@ -383,6 +385,7 @@ body {
   background-color: var(--red-color);
   padding: 15px 37px;
   margin-bottom: 95px;
+  transition: 0.8s;
 }
 
 .head_left-button:hover {
@@ -782,6 +785,7 @@ body {
   border-radius: 3px;
   margin-bottom: 75px;
   display: inline-block;
+  transition: 0.8s;
 }
 
 .contacts_form-block-button:hover {
@@ -1077,7 +1081,8 @@ body {
   .process_block-card:nth-child(odd)::after {
     display: none;
   }
-   .process_block-card:nth-child(even)::after {
+
+  .process_block-card:nth-child(even)::after {
     display: none;
   }
 }
@@ -1140,6 +1145,12 @@ body {
   background-color: transparent;
   border: none;
   font-family: "Montserrat", sans-serif;
+  transition: 0.8s;
+}
+
+.read-more-btn:hover {
+  transition: 0.8s;
+  opacity: 0.5;
 }
 
 .read-more-btn-ico {
@@ -1164,6 +1175,7 @@ body {
   .seo-block {
     padding: 30px;
     text-align: center;
+    margin-bottom: 20px;
   }
 }
 
@@ -1322,6 +1334,7 @@ body {
   color: #E30613;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 .portfolio_inner-block {
@@ -1362,6 +1375,7 @@ body {
   gap: 10px;
   align-items: center;
   cursor: pointer;
+  transition: 0.8s;
 }
 
 .portfolio_inner-block-card-button:hover {
@@ -1372,14 +1386,15 @@ body {
 .portfolio_inner-header-button-bottom {
   display: none;
 }
-.portfolio_pager{
+
+.portfolio_pager {
   display: none;
 }
 
 @media screen and (max-width:1280px) {
   .portfolio {
     padding: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .portfolio_inner-block-card {
@@ -1549,6 +1564,7 @@ body {
   font-weight: 500;
   text-decoration: underline;
   color: var(--red-color);
+  transition: 0.8s;
 }
 
 .map_content-list a:hover {
@@ -1565,6 +1581,7 @@ body {
   background-color: var(--red-color);
   color: #fff;
   text-decoration: none;
+  transition: 0.8s;
 }
 
 .map_content-button:hover {
@@ -1574,7 +1591,7 @@ body {
 
 .map_fullwidth {
   width: 99vw;
-  margin-top: 60px;
+  margin-top: 80px;
   height: 600px;
   width: 99vw;
   position: absolute;
@@ -1599,10 +1616,14 @@ body {
   max-width: 412px;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 @media screen and (max-width:1280px) {
+  .map {
+    margin-bottom: 100px;
+  }
+
   .map_inner {
     margin: 500px auto 0;
     max-width: 660px;
@@ -1636,6 +1657,12 @@ body {
     margin-top: 50px;
     padding: 30px;
     height: 708px;
+  }
+
+  .map_content-list-item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
   }
 }
 
