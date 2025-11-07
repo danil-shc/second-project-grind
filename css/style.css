@@ -1660,11 +1660,6 @@ body {
     height: 708px;
   }
 
-  .map_content-list-item {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-  }
 }
 
 @media screen and (max-width:750px) {
@@ -1697,6 +1692,19 @@ body {
     font-size: 28px;
   }
 
+  .map_content-list-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .map_content-list-item:nth-child(2) {
+    gap: 26px;
+  }
+
+  .map_content-list-item:nth-child(3) {
+    gap: 25px;
+  }
 }
 
 /* Подвал */
@@ -1768,11 +1776,13 @@ body {
   text-decoration: none;
   color: #1C1C1C;
 }
+
 .footer-inner_list-item-note,
-.footer-inner_list-item-title{
+.footer-inner_list-item-title {
   text-decoration: none;
   color: #1C1C1C;
 }
+
 .footer_inner-bottom {
   position: absolute;
   left: 0;
