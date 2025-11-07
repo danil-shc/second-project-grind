@@ -1712,7 +1712,7 @@ body {
 .footer_logo {
   width: 265px;
   height: 66px;
-  margin-right: 105px;
+  margin-right: 95px;
 }
 
 .footer_inner-service-title {
@@ -1764,8 +1764,14 @@ body {
 
 .footer_inner-contacts-list-elem {
   font-weight: 600;
+  text-decoration: none;
+  color: #1C1C1C;
 }
-
+.footer-inner_list-item-note,
+.footer-inner_list-item-title{
+  text-decoration: none;
+  color: #1C1C1C;
+}
 .footer_inner-bottom {
   position: absolute;
   left: 0;
