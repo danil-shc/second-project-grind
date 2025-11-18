@@ -148,3 +148,115 @@ $(function () {
   apply();
   (mq.addEventListener ? mq.addEventListener('change', apply) : mq.addListener(apply));
 });
+
+$(function () {
+  var $track = $('.other_services-track');
+  var $cards = $('.other_services-card');
+  var $slider = $('.other_services-slider');
+  var $btnPrev = $('.other_services-arrow--prev');
+  var $btnNext = $('.other_services-arrow--next');
+
+  var cardStep = 0;          // сдвиг в карточках
+  var maxStep = 0;
+
+  function recalc() {
+    var cardWidth = $cards.outerWidth(true);      // ширина + gap
+    var visible = Math.floor($slider.width() / cardWidth) || 1;
+    maxStep = Math.max(0, $cards.length - visible);
+    if (cardStep > maxStep) cardStep = maxStep;
+    update();
+  }
+
+  function update() {
+    var cardWidth = $cards.outerWidth(true);
+    var offset = -cardStep * cardWidth;
+    $track.css('transform', 'translateX(' + offset + 'px)');
+
+    $btnPrev.prop('disabled', cardStep === 0);
+    $btnNext.prop('disabled', cardStep === maxStep);
+  }
+
+  $btnPrev.on('click', function () {
+    if (cardStep > 0) {
+      cardStep--;
+      update();
+    }
+  });
+
+  $btnNext.on('click', function () {
+    if (cardStep < maxStep) {
+      cardStep++;
+      update();
+    }
+  });
+
+  // пересчёт при загрузке и ресайзе
+  recalc();
+  $(window).on('resize', recalc);
+});
+
+$(function () {
+  // если есть элемент с классом faq-item--open — он сразу показан (CSS сам раскроет)
+  $('.faq-header').on('click', function () {
+    var $item = $(this).closest('.faq-item');
+    var $list = $item.closest('.faq-list');
+
+    if ($item.hasClass('faq-item--open')) {
+      // закрываем текущий
+      $item.removeClass('faq-item--open');
+    } else {
+      // закрываем остальные
+      $list.find('.faq-item--open').removeClass('faq-item--open');
+      // открываем текущий
+      $item.addClass('faq-item--open');
+    }
+  });
+});
+
+$(function () {
+  var $track  = $('.equipment-track');
+  var $slides = $('.equipment-slide');
+  var $dots   = $('.equipment-dot');
+  var current = 0;
+  var count   = $slides.length;
+
+  function goTo(index) {
+    if (index < 0) index = count - 1;
+    if (index >= count) index = 0;
+    current = index;
+
+    var offset = -100 * index;
+    $track.css('transform', 'translateX(' + offset + '%)');
+
+    $dots.removeClass('equipment-dot--active')
+         .eq(index).addClass('equipment-dot--active');
+  }
+
+  $('.equipment-arrow--prev').on('click', function () {
+    goTo(current - 1);
+  });
+
+  $('.equipment-arrow--next').on('click', function () {
+    goTo(current + 1);
+  });
+
+  $dots.on('click', function () {
+    var idx = $(this).index();
+    goTo(idx);
+  });
+});
+
+$(function () {
+  $('.gallery_top-menu').on('click', 'a', function (e) {
+    e.preventDefault();
+
+    $('.gallery_top-menu a')
+      .removeClass('gallery_top-menu-item_active')
+      .addClass('gallery_top-menu-item');
+
+    $(this)
+      .addClass('gallery_top-menu-item_active')
+      .removeClass('gallery_top-menu-item');
+  });
+});
+
