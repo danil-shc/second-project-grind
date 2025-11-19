@@ -765,9 +765,10 @@
 }
 
 /* Галерея */
-.gallery{
+.gallery {
   margin-bottom: 100px;
 }
+
 .gallery_top-menu {
   display: flex;
   gap: 10px;
@@ -811,6 +812,13 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: 0.8s;
+}
+
+.gallery_block-item:hover {
+  transition: 0.8s;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .gallery_block-item:nth-child(3) {
@@ -828,6 +836,7 @@
   cursor: pointer;
   border: none;
 }
+
 .gallery_video-play {
   position: absolute;
   left: 50%;
@@ -839,5 +848,11 @@
   background: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding-left: 33px;
+  transition: 0.8s;
+}
+
+.gallery_video-play:hover{
+  transition: 0.8s;
+  opacity: 0.8;
 }

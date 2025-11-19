@@ -768,7 +768,7 @@
   margin-bottom: 80px;
 }
 .map_fullwidth {
-  margin-top: 110px;
+  margin-top: 140px;
 }
 
 .map_inner {
@@ -788,7 +788,9 @@
 .map_content {
   margin-bottom: 25px;
 }
-
+.map_title{
+  font-size: 48px;
+}
 .map_content-block {}
 
 .map_content-subtitle {

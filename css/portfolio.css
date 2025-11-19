@@ -688,8 +688,9 @@
   gap: 35px;
 }
 
-.portfolio_inner-header {
+.portfolio_inner-title {
   margin-bottom: 22px;
+  font-size: 48px;
 }
 
 .gallery_top-menu {
@@ -705,6 +706,11 @@
   background-color: #F5F5F5;
   color: #1C1C1C;
   transition: 0.5s;
+}
+
+.gallery_top-menu-item:hover{
+  transition: 0.5s;
+  opacity: 0.7;
 }
 
 .gallery_top-menu-item_active {

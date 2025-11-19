@@ -5,6 +5,9 @@
 .print-services_inner-card:nth-child(6) {
   grid-column: span 1;
 }
+.print-services_inner-card{
+  font-size: 20px;
+}
 
 .bread {
   font-size: 12px;
@@ -62,6 +65,12 @@
   padding: 15px 37px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.8s;
+}
+
+.big-card_button:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }
 
 .benefits {

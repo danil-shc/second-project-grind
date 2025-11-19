@@ -130,7 +130,7 @@ body {
 /* Заголовок */
 .header {
   margin-top: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 }
 
 .header-inner {
@@ -201,17 +201,33 @@ body {
 }
 
 .sub-menu_list-elem {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   gap: 8px;
   transition: 0.8s;
+  white-space: nowrap;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 16px;
 }
 
-.sub-menu_list-elem:hover {
-  opacity: 0.7;
+.sub-menu_list-elem::after {
+  content: "";
+  position: absolute;
+  left: -30px;
+  right: -30px;
+  bottom: 0;
+  height: 2px;
+  background: #E30613;
+  transform-origin: center;
+  transform: scaleX(0);
   transition: 0.8s;
+}
+
+.sub-menu_list-elem:hover::after {
+  transform: scaleX(1);
 }
 
 .header-inner_button-hid {
@@ -1000,6 +1016,11 @@ body {
   z-index: 2;
 }
 
+.process_block-card-text {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
 .process_block-card:nth-child(odd)::after {
   background: url("../img/index/arrow1.svg") center/contain no-repeat;
 }
@@ -1745,6 +1766,15 @@ body {
   width: 239px;
   text-decoration: none;
   color: #1C1C1C;
+  transition: 0.8s;
+  white-space: nowrap;
+}
+
+.footer_inner-service-list-elem:hover,
+.footer_inner-contacts-list-elem:hover {
+  transition: 0.8s;
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .footer_inner-contacts-list {
@@ -1775,6 +1805,7 @@ body {
   font-weight: 600;
   text-decoration: none;
   color: #1C1C1C;
+  white-space: nowrap
 }
 
 .footer-inner_list-item-note,

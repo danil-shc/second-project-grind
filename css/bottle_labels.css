@@ -1,9 +1,19 @@
+.partners_inner{
+  gap: 60px 87px;
+}
+
 .print-services_inner-card:nth-child(1) {
   grid-column: span 1;
 }
 
+
 .print-services_inner-card:nth-child(6) {
   grid-column: span 1;
+}
+
+.other_services-card:hover {
+  transition: 0.8s;
+  opacity: 0.6;
 }
 
 .bread {
@@ -21,7 +31,10 @@
   opacity: 0.5;
   text-decoration: none;
 }
-
+.bread-item a{
+  text-decoration: none;
+  color: var(--dark-color)
+}
 .bread-item--current {
   opacity: 1;
   color: #1C1C1C;
@@ -42,7 +55,7 @@
 .big-card_text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   margin-bottom: 86px;
   color: var(--dark-color);
 }
@@ -63,6 +76,12 @@
   padding: 15px 37px;
   text-decoration: none;
   display: inline-block;
+  transition: 0.8s;
+}
+
+.big-card_button:hover {
+  transition: 0.8s;
+  opacity: 0.6;
 }
 
 .benefits {
@@ -152,7 +171,7 @@
 
 .calc-field select,
 .calc-field input[type="number"] {
-  padding: 11px 12px;
+  padding: 8px 12px;
   border: 1px solid #1C1C1C;
   border-radius: 4px;
   background: #ffffff;
@@ -178,10 +197,12 @@
 .calc-check {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 16px;
   color: #1C1C1C;
 }
+
+
 
 .calc-check:nth-child(4) {
   margin-bottom: 40px;
@@ -298,6 +319,12 @@
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 110px;
+  transition: 0.8s;
+}
+
+.calc-request-btn:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }
 
 .calc-policy {
@@ -321,21 +348,23 @@
 .information_inner {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 58px;
 }
 
 .information_title {
-  margin-bottom: 84px;
+  margin-bottom: 77px;
 }
 
 .information_inner-block {
   max-width: 1600px;
   display: flex;
   gap: 66px;
+  margin-right: auto;
 }
 
 .information_inner-block-text {
   width: 650px;
+  margin-top: 30px;
 }
 
 .information_inner-block-text-p {
@@ -380,6 +409,12 @@
 .portfolio_form-policy a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: underline;
+  transition: 0.8s;
+}
+
+.portfolio_form-policy a:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }
 
 .portfolio_form-right {
@@ -419,6 +454,10 @@
   outline: none;
 }
 
+.portfolio_form-form textarea{
+  padding: 6px 16px;
+}
+
 .portfolio_form-form input::placeholder,
 .portfolio_form-form textarea::placeholder {
   color: rgba(255, 255, 255, 1);
@@ -426,6 +465,15 @@
 
 .portfolio_form-form textarea {
   resize: none;
+}
+
+.portfolio_inner-block-card{
+  text-decoration: none;
+  transition: 0.8s;
+}
+.portfolio_inner-block-card:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }
 
 .portfolio_form-btn {
@@ -439,6 +487,12 @@
   font-family: inherit;
   cursor: pointer;
   margin-top: 10px;
+  transition: 0.8s;
+}
+
+.portfolio_form-btn:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }
 
 .portfolio_form-pencil {
@@ -541,12 +595,12 @@
 }
 
 .faq-item {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .faq-header {
   width: 100%;
-  padding: 16px 20px;
+  padding: 12px 16px;
   background: #F5F5F5;
   border: none;
   display: flex;
@@ -621,7 +675,7 @@
   max-height: 1000px;
   opacity: 1;
   padding-top: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 41px;
 }
 
 .faq-item--open .faq-body {
@@ -645,9 +699,11 @@
   line-height: 1.5;
   color: #1C1C1C;
 }
+
 .requirements_inner-text p {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
+
 .requirements_inner-text p:nth-child(2) {
   margin-bottom: 0;
 }

@@ -35,20 +35,19 @@
 .print-services_big-card {
   background-image: url(../img/equipment/big_card1.webp);
   margin-bottom: 30px;
-  padding: 40px;
-  height: 560px;
+  background-repeat: no-repeat;
+  padding: 70px;
 }
 
 .big-card_text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-bottom: 86px;
+  gap: 20px;
   color: var(--dark-color);
 }
 
 .big-card_text-title {
-  font-size: 48px;
+  font-size: 40px;
   width: 603px;
 }
 
@@ -630,7 +629,7 @@
 }
 
 .big-card {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
 .print-services_big-card {
@@ -686,7 +685,7 @@
 }
 
 .equipment {
-  padding: 40px 0;
+  margin-bottom: 100px;
   background: #ffffff;
 }
 
@@ -695,8 +694,8 @@
 }
 
 .equipment-viewport {
+
   overflow: hidden;
-  margin: 0 45px;
 }
 
 
@@ -736,11 +735,18 @@
 }
 
 .equipment-arrow--prev {
-  left: 24px;
+  left: -24px;
+  transition: 0.8s;
 }
 
 .equipment-arrow--next {
-  right: 24px;
+  right: -24px;
+  transition: 0.8s;
+}
+
+.equipment-arrow--prev:hover, .equipment-arrow--next:hover {
+  transition: 0.8s;
+  opacity: 0.8;
 }
 
 .equipment-dots {
