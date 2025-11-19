@@ -687,7 +687,9 @@
   justify-content: space-between;
   gap: 35px;
 }
-
+.portfolio_inner{
+  margin-bottom: 100px;
+}
 .portfolio_inner-title {
   margin-bottom: 22px;
   font-size: 48px;
@@ -740,4 +742,10 @@
   align-items: center;
   width: 230px;
   gap: 8px;
+  transition: 0.8s;
+}
+
+.portfolio_button:hover{
+  transition: 0.8s;
+  opacity: 0.7;
 }

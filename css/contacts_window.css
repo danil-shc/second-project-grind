@@ -764,20 +764,19 @@
 .equipment-dot--active {
   background: #E30613;
 }
+
 .map {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
+
 .map_fullwidth {
   margin-top: 140px;
 }
 
 .map_inner {
-  max-width: 658px;
-}
-
-.map_inner-content {
   border-radius: 16px;
-  width: 658px;
+  max-width: 658px;
+  padding: 32px;
 }
 
 .map_content-title {
@@ -788,9 +787,11 @@
 .map_content {
   margin-bottom: 25px;
 }
-.map_title{
+
+.map_title {
   font-size: 48px;
 }
+
 .map_content-block {}
 
 .map_content-subtitle {
@@ -816,6 +817,6 @@
 
 .map_content-img {}
 
-.map_fullwidth{
+.map_fullwidth {
   height: 700px;
 }

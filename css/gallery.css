@@ -835,6 +835,7 @@
   position: relative;
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 .gallery_video-play {
