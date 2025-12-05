@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/portfolio_process.css">
+  <link rel="stylesheet" href="css/adaptive.css">
   <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
     <header class="header">
       <div class="container">
         <div class="header-inner">
-          <a class="header-logo" href="#"><img src="img/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
+          <a class="header-logo" href="#"><img src="images/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
           <ul class="header-inner_list">
             <li class="header-inner_list-item">
               <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">г. Липецк, ул. Фадеева,
@@ -131,32 +132,77 @@
           <h5 class="portfolio_process-right-title sub-headers">Другие работы</h5>
           <ul class="portfolio_process-right-block">
             <li><a class="portfolio_process-right-block-card text-bd"
-                style="background-image:url('img/portfolio/1.webp')" href="#">Листовка
+                style="background-image:url('images/portfolio/1.webp')" href="#">Листовка
                 для YOUTHO</a></li>
             <li><a class="portfolio_process-right-block-card text-bd"
-                style="background-image:url('img/portfolio/2.webp')" href="#">Листовка
+                style="background-image:url('images/portfolio/2.webp')" href="#">Листовка
                 для YOUTHO</a></li>
             <li><a class="portfolio_process-right-block-card text-bd"
-                style="background-image:url('img/portfolio/1.webp')" href="#">Листовка
+                style="background-image:url('images/portfolio/1.webp')" href="#">Листовка
                 для YOUTHO</a></li>
             <li><a class="portfolio_process-right-block-card text-bd"
-                style="background-image:url('img/portfolio/2.webp')" href="#">Листовка
+                style="background-image:url('images/portfolio/2.webp')" href="#">Листовка
                 для YOUTHO</a></li>
           </ul>
         </div>
       </div>
       <div class="process_grid">
-        <img src="img/portfolio/card.webp" alt="" class="process_grid-item">
-        <img src="img/portfolio/card.webp" alt="" class="process_grid-item">
-        <img src="img/portfolio/card.webp" alt="" class="process_grid-item">
-        <img src="img/portfolio/card.webp" alt="" class="process_grid-item">
-        <img src="img/portfolio/card.webp" alt="" class="process_grid-item">
+        <img src="images/portfolio/card.webp" alt="" class="process_grid-item">
+        <img src="images/portfolio/card.webp" alt="" class="process_grid-item">
+        <img src="images/portfolio/card.webp" alt="" class="process_grid-item">
+        <img src="images/portfolio/card.webp" alt="" class="process_grid-item">
+        <img src="images/portfolio/card.webp" alt="" class="process_grid-item">
       </div>
+
+      <section class="other_services other_services-mobile">
+        <div class="container">
+          <div class="other_services-inner">
+            <div class="other_services-header">
+              <h3 class="other_services-title sub-headers">Другие работы</h3>
+              <div class="other_services-arrows">
+                <button class="other_services-arrow other_services-arrow--prev" type="button">
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 6.72559H20M1 6.72559L7.33333 0.725586M1 6.72559L7.33333 12.7256" stroke="white"
+                      stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="other_services-arrow other_services-arrow--next" type="button">
+                  <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.72559H-4.76837e-07M19 6.72559L12.6667 0.725586M19 6.72559L12.6667 12.7256"
+                      stroke="white" stroke-width="2" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="other_services-slider">
+              <ul class="other_services-track">
+                <li class="other_services-card text-bd" style="background-image:url('images/portfolio/1.webp')">
+                  <span class="portfolio_card-span">Листовка для YOUTHO</span>
+                </li>
+                <li class="other_services-card text-bd" style="background-image:url('images/portfolio/2.webp')">
+                  <span class="portfolio_card-span">Листовка для YOUTHO</span>
+                </li>
+                <li class="other_services-card text-bd" style="background-image:url('images/portfolio/1.webp')">
+                  <span class="portfolio_card-span">Листовка для YOUTHO</span>
+                </li>
+                <li class="other_services-card text-bd" style="background-image:url('images/portfolio/2.webp')">
+                  <span class="portfolio_card-span">Листовка для YOUTHO</span>
+                </li>
+              </ul>
+              <div class="other_services_pager"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="portfolio_form">
-        <img src="img/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil">
+        <img src="images/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil"
+          data-src-desktop="images/label_printing/pencil2.webp" data-src-tablet="images/label_printing/pencil2780.webp"
+          data-src-mobile="images/label_printing/pencil2380.webp" />
         <div class="portfolio_form-inner">
           <div class="portfolio_form-left">
-            <h2 class="portfolio_form-title sub-headers">Свяжитесь<br>с нами</h2>
+            <h2 class="portfolio_form-title sub-headers">Свяжитесь с нами</h2>
             <p class="portfolio_form-policy">
               Нажимая «Отправить»,<br>
               вы соглашаетесь с<br>
@@ -174,6 +220,12 @@
               <a href="#" class="portfolio_form-btn">Отправить</a>
             </form>
           </div>
+          <p class="portfolio_form-policy portfolio_form-policy-mobile">
+            <span class="policy-line">Нажимая «Отправить»,</span>
+            <span class="policy-line policy-line--nowrap">
+              вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </span>
+          </p>
         </div>
       </div>
     </div>
@@ -182,7 +234,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer_inner">
-        <img class="footer_logo" src="img/index/logoart.webp" alt="logo">
+        <img class="footer_logo" src="images/index/logoart.webp" alt="logo">
         <div class="footer_inner-service">
           <h6 class="footer_inner-service-title">Услуги</h6>
           <ul class="footer_inner-service-list">
@@ -223,6 +275,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

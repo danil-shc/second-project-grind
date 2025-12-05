@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Art-Print</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300;400;500;700&display=swap" />
+
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/adaptive.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a class="header-logo" href="#"><img src="img/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
+        <a class="header-logo" href="#"><img src="images/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
         <ul class="header-inner_list">
           <li class="header-inner_list-item">
             <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">г. Липецк, ул. Фадеева, д.
@@ -73,6 +77,118 @@
         </ul>
       </nav>
     </div>
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__backdrop"></div>
+
+      <div class="mobile-menu__panel">
+        <!-- верхняя часть -->
+        <div class="mobile-menu__top">
+          <a class="mobile-menu__logo" href="#">
+            <img src="images/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print">
+          </a>
+
+          <div class="mobile-menu__top-info">
+            <div class="mobile-menu__phone">8 (4742) 43-25-36</div>
+            <div class="mobile-menu__time">Пн–Пт: 9:00–18:00</div>
+          </div>
+
+          <span class="material-symbols-outlined mobile-menu__close">
+            close
+          </span>
+        </div>
+
+        <!-- большая кнопка Заказать звонок -->
+        <a href="#" class="mobile-menu__callback">
+          <span class="mobile-menu__callback-text">Заказать звонок</span>
+          <svg class="mobile-menu__callback-icon" width="16" height="16" aria-hidden="true" focusable="false"
+            viewBox="0 0 16 16" fill="none">
+            <path
+              d="M15.5477 11.7424L13.3149 9.50954C12.5174 8.71209 11.1618 9.0311 10.8428 10.0678C10.6036 10.7855 9.80611 11.1842 9.08841 11.0247C7.49352 10.626 5.34042 8.55261 4.9417 6.87797C4.70246 6.16024 5.18093 5.36279 5.89863 5.12359C6.93531 4.80461 7.25429 3.44895 6.45684 2.65151L4.224 0.418659C3.58604 -0.139553 2.6291 -0.139553 2.07089 0.418659L0.555745 1.93381C-0.959401 3.5287 0.715235 7.75516 4.46323 11.5032C8.21122 15.2511 12.4377 17.0056 14.0326 15.4106L15.5477 13.8955C16.106 13.2575 16.106 12.3006 15.5477 11.7424Z"
+              fill="currentColor" />
+          </svg>
+        </a>
+
+        <!-- меню -->
+        <nav class="mobile-menu__nav">
+          <!-- Печать (по умолчанию открыта) -->
+          <div class="mobile-menu__item is-open">
+            <button class="mobile-menu__item-header" type="button">
+              <span>Печать</span>
+              <svg class="mobile-menu__arrow" width="9" height="8" viewBox="0 0 9 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.59955 7.5C3.98445 8.16667 4.9467 8.16667 5.3316 7.5L8.7957 1.5C9.1806 0.833334 8.69948 0 7.92968 0H1.00147C0.231674 0 -0.249451 0.833333 0.135449 1.5L3.59955 7.5Z"
+                  fill="#E30613" />
+              </svg>
+            </button>
+            <ul class="mobile-menu__submenu">
+              <li>Самоклеящаяся этикетка</li>
+              <li>Этикетки</li>
+              <li>Бопп-плёнка</li>
+              <li>Риббоны</li>
+              <li>Листовки</li>
+              <li>Дизайн печати</li>
+              <li>Допечатная подготовка</li>
+              <li>Постпечатная обработка</li>
+              <li>Печать на бумаге</li>
+              <li>Печать на картоне</li>
+              <li>Флексопечать</li>
+              <li>Полипропиленовая плёнка</li>
+              <li>Бумага для типографии</li>
+            </ul>
+          </div>
+
+          <!-- Другие услуги (с выпадающим списком) -->
+          <div class="mobile-menu__item">
+            <button class="mobile-menu__item-header mobile-menu__item-header--bg" type="button">
+              <span>Другие услуги</span>
+              <svg class="mobile-menu__arrow" width="9" height="8" viewBox="0 0 9 8" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.59955 7.5C3.98445 8.16667 4.9467 8.16667 5.3316 7.5L8.7957 1.5C9.1806 0.833334 8.69948 0 7.92968 0H1.00147C0.231674 0 -0.249451 0.833333 0.135449 1.5L3.59955 7.5Z"
+                  fill="#E30613" />
+              </svg>
+            </button>
+            <ul class="mobile-menu__submenu">
+              <li>Маркетинговые материалы</li>
+              <li>Брендирование упаковки</li>
+              <li>Дизайн макетов</li>
+            </ul>
+          </div>
+
+          <!-- Простые пункты без подменю -->
+          <div class="mobile-menu__item">
+            <a href="#" class="mobile-menu__simple-link">Оборудование</a>
+          </div>
+          <div class="mobile-menu__item">
+            <a href="#" class="mobile-menu__simple-link">Галерея</a>
+          </div>
+          <div class="mobile-menu__item">
+            <a href="#" class="mobile-menu__simple-link">Доставка</a>
+          </div>
+          <div class="mobile-menu__item">
+            <a href="#" class="mobile-menu__simple-link">Контакты</a>
+          </div>
+        </nav>
+
+        <div class="mobile-menu__footer">
+          <div class="mm-footer_together">
+            <div class="mm-footer__address">г. Липецк, ул. Фадеева, д. 11.</div>
+            <div class="mm-footer__time">Пн–Пт: 9:00–18:00</div>
+          </div>
+          <a href="mailto:sales@artprint48.ru" class="mm-footer__email">
+            sales@artprint48.ru
+          </a>
+
+          <a href="tel:+74742432536" class="mm-footer__phone">
+            8 (4742) 43-25-36
+          </a>
+        </div>
+
+      </div>
+    </div>
+
   </header>
   <section class="head">
     <div class="container">
@@ -80,7 +196,7 @@
         <div class="head_left">
           <h2 class="head_left-title headers">Печать брошюр</h2>
           <span class="head_left-p text-md">Заказы любой сложности</span>
-          <img class="head_left-img" src="img/index/head.webp" alt="projects">
+          <img class="head_left-img" src="images/index/head.webp" alt="projects">
           <a href="#" class="head_left-button">Оставить заявку</a>
           <div class="head_left-progress-bars">
             <div class="head_left-progress-bar">
@@ -102,7 +218,7 @@
           </div>
         </div>
         <div class="head_right">
-          <img src="img/index/head.webp" alt="projects">
+          <img src="images/index/head.webp" alt="projects">
         </div>
       </div>
   </section>
@@ -121,7 +237,7 @@
           </div>
         </div>
         <div class="services_right">
-          <img class="services_right-img" src="img/index/services.webp" alt="service-man">
+          <img class="services_right-img" src="images/index/services.webp" alt="service-man">
         </div>
       </div>
     </div>
@@ -131,36 +247,46 @@
       <h3 class="print-services_title sub-headers">Услуги типографии</h3>
       <div class="print-services_slider">
         <ul class="print-services_inner">
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card1.webp')">
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card1.webp')">
             Самоклеющаяся<br>этикетка</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card2.webp')">Этикетки
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card2.webp')">Этикетки
             <br> без
             печати</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card3.webp')">Риббоны</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card4.webp')">Листовки
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card3.webp')">Риббоны
           </li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card5.webp')">Брошюры</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card6.webp')">Бопп-пленка
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card4.webp')">
+            Листовки
           </li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card7.webp')">Постпечатная
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card5.webp')">
+            Брошюры</li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card6.webp')">
+            Бопп-пленка
+          </li>
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card7.webp')">
+            Постпечатная
             <br>
             обработка </li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card8.webp')">Печать <br>
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card8.webp')">Печать
+            <br>
             на
             бумаге</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card9.webp')">Дизайн <br>
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card9.webp')">Дизайн
+            <br>
             печати
           </li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card10.webp')">Допечатная
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card10.webp')">
+            Допечатная
             подготовка</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card11.webp')">Бумага для
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card11.webp')">
+            Бумага для
             типографии</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card12.webp')">
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card12.webp')">
             Флексопечать</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card13.webp')">
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card13.webp')">
             Полипропиленовая
             пленка</li>
-          <li class="print-services_inner-card text-bd" style="background-image:url('img/index/card14.webp')">Печать <br>
+          <li class="print-services_inner-card text-bd" style="background-image:url('images/index/card14.webp')">Печать
+            <br>
             на
             картоне</li>
         </ul>
@@ -175,28 +301,28 @@
       <div class="contacts_inner">
         <div class="contacts_cards">
           <div class="contacts_cards-item">
-            <img class="contacts_cards-item-ico" src="img/index/contactsico1.svg" alt="ico">
+            <img class="contacts_cards-item-ico" src="images/index/contactsico1.svg" alt="ico">
             <h5 class="contacts_cards-item-title text-bd"><span class="contacts_cards-item-title-red">Опытная</span>
               команда</h5>
             <span class="contacts_cards-item-text text-p">Работаем с 2001 года. Сотрудники с многолетним стажем в
               полиграфии помогут найти оптимальное решение.</span>
           </div>
           <div class="contacts_cards-item">
-            <img class="contacts_cards-item-ico" src="img/index/contactsico2.svg" alt="ico">
+            <img class="contacts_cards-item-ico" src="images/index/contactsico2.svg" alt="ico">
             <h5 class="contacts_cards-item-title text-bd"><span class="contacts_cards-item-title-red">Высокое
                 качество</span> печати</h5>
             <span class="contacts_cards-item-text text-p">Контроль качества на каждом этапе обеспечивает четкие
               изображения и яркие краски. Компания прошла международный аудит.</span>
           </div>
           <div class="contacts_cards-item">
-            <img class="contacts_cards-item-ico" src="img/index/contactsico3.svg" alt="ico">
+            <img class="contacts_cards-item-ico" src="images/index/contactsico3.svg" alt="ico">
             <h5 class="contacts_cards-item-title text-bd">Широкий выбор<br><span class="contacts_cards-item-title-red">
                 материалов</span></h5>
             <span class="contacts_cards-item-text text-p">Печать на самоклеящейся, металлизированной, термостойкой и
               морозостойкой бумаге, а также на полипропиленовой и BOPP пленке.</span>
           </div>
           <div class="contacts_cards-item">
-            <img class="contacts_cards-item-ico" src="img/index/contactsico4.svg" alt="ico">
+            <img class="contacts_cards-item-ico" src="images/index/contactsico4.svg" alt="ico">
             <h5 class="contacts_cards-item-title text-bd"><span
                 class="contacts_cards-item-title-red">Оперативность</span><br> исполнения</h5>
             <span class="contacts_cards-item-text text-p">Соблюдение сроков – <br> одно из ключевых <br> обязательств
@@ -204,7 +330,7 @@
           </div>
         </div>
         <div class="contacts_form">
-          <h3 class="contacts_form-title sub-headers">Свяжитесь<br class="contacts_br"> с нами</h3>
+          <h3 class="contacts_form-title sub-headers">Свяжитесь с нами</h3>
           <div class="contacts_form-block">
             <div class="contacts_form-block-input">
               <input class="contacts_form-block-input-item" type="text" name="text" required placeholder="Имя">
@@ -214,9 +340,9 @@
             <textarea class="contacts_form-block-textarea" name="message" required placeholder="Комментарий"></textarea>
             <a href="#" class="contacts_form-block-button">Отправить</a>
             <p class="contacts_form-block-text text-p"> <span class="break">Нажимая «Отправить»,</span>
-              вы соглашаетесь с <span class="contacts_policy">политикой конфиденциальности</span></p>
+              вы соглашаетесь с <a href="" class="contacts_policy">политикой конфиденциальности</a></p>
           </div>
-          <img class="contacts_img" src="img/index/contacts-form380.webp" alt="pencil">
+          <img class="contacts_img" src="images/index/contacts-form380.webp" alt="pencil">
         </div>
       </div>
     </div>
@@ -226,23 +352,23 @@
       <h3 class="process_title sub-headers">Как мы работаем</h3>
       <div class="process_block">
         <div class="process_block-card">
-          <img src="img/index/process1.webp" alt="photo">
+          <img src="images/index/process1.webp" alt="photo">
           <p class="process_block-card-text text-bd">Заявка</p>
         </div>
         <div class="process_block-card">
-          <img src="img/index/process2.webp" alt="photo">
+          <img src="images/index/process2.webp" alt="photo">
           <p class="process_block-card-text text-bd">Макет</p>
         </div>
         <div class="process_block-card">
-          <img src="img/index/process3.webp" alt="photo">
+          <img src="images/index/process3.webp" alt="photo">
           <p class="process_block-card-text text-bd">Печать</p>
         </div>
         <div class="process_block-card">
-          <img src="img/index/process4.webp" alt="photo">
+          <img src="images/index/process4.webp" alt="photo">
           <p class="process_block-card-text text-bd">Проверка</p>
         </div>
         <div class="process_block-card">
-          <img src="img/index/process5.webp" alt="photo">
+          <img src="images/index/process5.webp" alt="photo">
           <p class="process_block-card-text text-bd">Доставка</p>
         </div>
       </div>
@@ -287,18 +413,18 @@
     <div class="container">
       <h3 class="partners_title sub-headers">Нам доверяют</h3>
       <div class="partners_inner">
-        <img class="partners_inner-item" src="img/index/partner1.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner2.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner3.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner4.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner5.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner6.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner7.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner8.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner9.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner10.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner11.webp" alt="partner">
-        <img class="partners_inner-item" src="img/index/partner12.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner1.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner2.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner3.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner4.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner5.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner6.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner7.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner8.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner9.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner10.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner11.webp" alt="partner">
+        <img class="partners_inner-item" src="images/index/partner12.webp" alt="partner">
       </div>
     </div>
   </section>
@@ -316,7 +442,7 @@
         </div>
         <div class="portfolio_slider">
           <ul class="portfolio_inner-block">
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/1.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/1.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -327,7 +453,7 @@
                 </button>
               </div>
             </li>
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/2.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/2.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -338,7 +464,7 @@
                 </button>
               </div>
             </li>
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/3.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/3.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -349,7 +475,7 @@
                 </button>
               </div>
             </li>
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/4.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/4.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -360,7 +486,7 @@
                 </button>
               </div>
             </li>
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/5.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/5.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -371,7 +497,7 @@
                 </button>
               </div>
             </li>
-            <li class="portfolio_inner-block-card text-bd" style="background-image:url('img/index/1.webp')">
+            <li class="portfolio_inner-block-card text-bd" style="background-image:url('images/index/1.webp')">
               <div class="portfolio_inner-block-card-content">
                 <p class="portfolio_inner-block-card-text text-bd">Листовка для YOUTHO</p>
                 <button class="portfolio_inner-block-card-button text-smb">Подробнее
@@ -443,13 +569,13 @@
       </div>
     </div>
     <div class="map_fullwidth">
-      <img src="img/index/map.webp" alt="Карта" class="map_image">
+      <img src="images/index/map.webp" alt="Карта" class="map_image">
     </div>
   </section>
   <footer class="footer">
     <div class="container">
       <div class="footer_inner">
-        <img class="footer_logo" src="img/index/logoart.webp" alt="logo">
+        <img class="footer_logo" src="images/index/logoart.webp" alt="logo">
         <div class="footer_inner-service">
           <h6 class="footer_inner-service-title">Услуги</h6>
           <ul class="footer_inner-service-list">

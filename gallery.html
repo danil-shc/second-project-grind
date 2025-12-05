@@ -7,13 +7,14 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/adaptive.css">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a class="header-logo" href="#"><img src="img/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
+        <a class="header-logo" href="#"><img src="images/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
         <ul class="header-inner_list">
           <li class="header-inner_list-item">
             <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">г. Липецк, ул. Фадеева, д.
@@ -95,13 +96,13 @@
       </div>
 
       <div class="gallery_block">
-        <img src="img/gallery/1.webp" alt="" class="gallery_block-item">
-        <img src="img/gallery/2.webp" alt="" class="gallery_block-item">
-        <img src="img/gallery/3.webp" alt="" class="gallery_block-item">
-        <img src="img/gallery/4.webp" alt="" class="gallery_block-item">
-        <img src="img/gallery/5.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/1.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/2.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/3.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/4.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/5.webp" alt="" class="gallery_block-item">
         <button class="gallery_block-item gallery_block-item_video" type="button">
-          <img src="img/gallery/6.webp" alt="" class="gallery_block-item-img">
+          <img src="images/gallery/6.webp" alt="" class="gallery_block-item-img">
           <span class="gallery_video-play">
             <svg width="37" height="41" viewBox="0 0 37 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -110,14 +111,16 @@
             </svg>
           </span>
         </button>
-        <img src="img/gallery/7.webp" alt="" class="gallery_block-item">
+        <img src="images/gallery/7.webp" alt="" class="gallery_block-item">
       </div>
 
       <div class="portfolio_form">
-        <img src="img/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil">
+        <img src="images/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil"
+          data-src-desktop="images/label_printing/pencil2.webp" data-src-tablet="images/label_printing/pencil2780.webp"
+          data-src-mobile="images/label_printing/pencil2380.webp" />
         <div class="portfolio_form-inner">
           <div class="portfolio_form-left">
-            <h2 class="portfolio_form-title sub-headers">Свяжитесь<br>с нами</h2>
+            <h2 class="portfolio_form-title sub-headers">Свяжитесь с нами</h2>
             <p class="portfolio_form-policy">
               Нажимая «Отправить»,<br>
               вы соглашаетесь с<br>
@@ -135,6 +138,12 @@
               <a href="#" class="portfolio_form-btn">Отправить</a>
             </form>
           </div>
+          <p class="portfolio_form-policy portfolio_form-policy-mobile">
+            <span class="policy-line">Нажимая «Отправить»,</span>
+            <span class="policy-line policy-line--nowrap">
+              вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </span>
+          </p>
         </div>
       </div>
     </div>
@@ -143,7 +152,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer_inner">
-        <img class="footer_logo" src="img/index/logoart.webp" alt="logo">
+        <img class="footer_logo" src="images/index/logoart.webp" alt="logo">
         <div class="footer_inner-service">
           <h6 class="footer_inner-service-title">Услуги</h6>
           <ul class="footer_inner-service-list">

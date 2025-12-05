@@ -1,14 +1,3 @@
-.print-services_inner-card:nth-child(1) {
-  grid-column: span 1;
-}
-
-.print-services_inner-card:nth-child(6) {
-  grid-column: span 1;
-}
-.print-services_inner-card{
-  font-size: 20px;
-}
-
 .bread {
   font-size: 12px;
   line-height: 1.5;
@@ -35,7 +24,7 @@
 }
 
 .print-services_big-card {
-  background-image: url(../img/label_printing/big_card.webp);
+  background-image: url(../images/label_printing/big_card.webp);
   margin-bottom: 40px;
   padding: 70px;
   height: 506px;
@@ -49,7 +38,7 @@
   color: #ffffff;
 }
 
-.big-card_text-title {
+.big-card_text-title.sub-headers {
   font-size: 48px;
 }
 
@@ -68,258 +57,13 @@
   transition: 0.8s;
 }
 
-.big-card_button:hover{
+.big-card_button:hover {
   transition: 0.8s;
   opacity: 0.7;
 }
 
 .benefits {
   margin-bottom: 100px;
-}
-
-.benefits_inner_cards {
-  display: flex;
-  gap: 20px;
-}
-
-.benefits_inner-item {
-  background-color: #F5F5F5;
-  width: 303px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 42px;
-}
-
-.benefits_inner-item-ico {
-  width: 60px;
-  height: 60px;
-}
-
-.benefits_inner-item-text-block {
-  margin-top: auto;
-}
-
-.benefits_inner-item-title {
-  font-size: 20px;
-  margin-bottom: 16px;
-}
-
-.benefits_inner-title-red {
-  color: var(--red-color);
-}
-
-.benefits_inner-item-text {
-  opacity: 1;
-}
-
-/* Калькулятор */
-.calc {
-  margin-bottom: 100px;
-}
-
-.calc-inner {
-  display: flex;
-}
-
-.calc-left {
-  background: #F5F5F5;
-  padding: 40px;
-  padding-right: 100px;
-  padding-bottom: 110px;
-}
-
-.calc-title {
-  margin-bottom: 60px;
-  color: #1C1C1C;
-}
-
-.calc-form {
-  max-width: 100%;
-}
-
-.calc-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px 20px;
-  margin-bottom: 40px;
-}
-
-.calc-field {
-  display: flex;
-  flex-direction: column;
-}
-
-.calc-label {
-  font-weight: 500;
-  line-height: 150%;
-  font-size: 12px;
-  margin-bottom: 12px;
-  color: rgba(28, 28, 28, 0.5);
-}
-
-.calc-field select,
-.calc-field input[type="number"] {
-  padding: 11px 12px;
-  border: 1px solid #1C1C1C;
-  border-radius: 4px;
-  background: #ffffff;
-  font-size: 15px;
-  color: #1C1C1C;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.calc-field select:focus,
-.calc-field input[type="number"]:focus {
-  border-color: #E30613;
-}
-
-.calc-extra-title {
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 150%;
-  margin-bottom: 22px;
-  color: rgba(28, 28, 28, 0.5);
-}
-
-.calc-check {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin-bottom: 16px;
-  color: #1C1C1C;
-}
-
-.calc-check:nth-child(4) {
-  margin-bottom: 40px;
-}
-
-.calc-check input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  margin-right: 12px;
-  border: 1px solid #1C1C1C;
-  border-radius: 4px;
-  appearance: none;
-  -webkit-appearance: none;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-
-.calc-check input[type="checkbox"]:checked {
-  border-radius: 4px;
-  background-color: #E30613;
-  box-shadow: inset 0 0 0 2px #ffffff;
-}
-
-.calc-submit {
-  display: inline-block;
-  padding: 15px 60px;
-  background: #E30613;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-.calc-right {
-  padding: 50px 30px 40px 30px;
-  background: #E30613;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.calc-total {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 45px;
-  margin-bottom: 45px;
-}
-
-.calc-total-label {
-  margin-bottom: 20px;
-  font-size: 24px;
-}
-
-.calc-total-value {
-  margin: 0;
-  font-size: 48px;
-  font-weight: 500;
-}
-
-.calc-pencil {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.calc-request {
-  display: flex;
-  flex-direction: column;
-}
-
-.calc-request-title {
-  margin-bottom: 32px;
-  font-size: 32px;
-  line-height: 1.1;
-  font-weight: 500;
-}
-
-.calc-request-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.calc-request-form-inputs {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 30px;
-}
-
-.calc-request-form input {
-  padding: 14px 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background: transparent;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.5;
-  outline: none;
-  font-family: "Montserrat", sans-serif;
-}
-
-.calc-request-form input::placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-
-.calc-request-btn {
-  display: inline-block;
-  padding: 15px 172px;
-  border-radius: 8px;
-  background: #ffffff;
-  color: #E30613;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 110px;
-}
-
-.calc-policy {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 150%;
-  text-align: center;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.calc-policy a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
 }
 
 .information {
@@ -360,103 +104,6 @@
   max-width: 1600px;
   margin-left: auto;
 }
-
-/* Форма в портфолио */
-.portfolio_form {
-  background: #E30613;
-  color: #ffffff;
-  padding: 40px;
-  position: relative;
-}
-
-.portfolio_form-inner {
-  display: flex;
-}
-
-.portfolio_form-left {
-  display: flex;
-  flex-direction: column;
-  gap: 85px;
-}
-
-.portfolio_form-policy {
-  font-size: 12px;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.portfolio_form-policy a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: underline;
-}
-
-.portfolio_form-right {
-  margin-left: auto;
-}
-
-.portfolio_form-form {
-  width: 572px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.portfolio_form-row {
-  display: flex;
-  gap: 10px;
-}
-
-.portfolio_inner-block {
-  margin-bottom: 40px;
-}
-
-.portfolio_form-row input {
-  flex: 1 1 0;
-}
-
-.portfolio_form-form input,
-.portfolio_form-form textarea {
-  padding: 14px 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  background: transparent;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 1.5;
-  font-family: inherit;
-  outline: none;
-}
-
-.portfolio_form-form input::placeholder,
-.portfolio_form-form textarea::placeholder {
-  color: rgba(255, 255, 255, 1);
-}
-
-.portfolio_form-form textarea {
-  resize: none;
-}
-
-.portfolio_form-btn {
-  display: inline-block;
-  padding: 12px 240px;
-  border-radius: 6px;
-  text-decoration: none;
-  background: #ffffff;
-  color: #E30613;
-  font-size: 16px;
-  font-family: inherit;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.portfolio_form-pencil {
-  position: absolute;
-  left: 40%;
-  bottom: 0;
-  transform: translateX(-50%);
-  pointer-events: none;
-}
-
 
 .other_services {
   margin-bottom: 100px;
@@ -526,4 +173,27 @@
 
 .other_services-card:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .print-services_big-card {
+    background-image: url(../images/label_printing/big_card780.webp);
+  }
+
+  .big-card_text-title.sub-headers {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .portfolio_inner {
+    margin-bottom: 30px;
+  }
+
+  .print-services_big-card {
+    background-image: url(../images/label_printing/big_card380.webp);
+  }
+  .big-card_text-title.sub-headers {
+    font-size: 28px;
+  }
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/delivery.css">
+  <link rel="stylesheet" href="css/adaptive.css">
   <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a class="header-logo" href="#"><img src="img/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
+        <a class="header-logo" href="#"><img src="images/index/Logotip_ArtPrint_2 1.webp" alt="Art-Print"></a>
         <ul class="header-inner_list">
           <li class="header-inner_list-item">
             <p class="header-inner_list-item-title text-smb header-inner_list-item-title-hid">г. Липецк, ул. Фадеева, д.
@@ -98,28 +99,10 @@
             </p>
           </div>
           <a href="#" class="big-card_button">Оставить заявку</a>
-          <div class="head_left-progress-bars">
-            <div class="head_left-progress-bar">
-              <div class="head_left-progress-bar-completed" style="width:50%"></div>
-              <div class="head_left-progress-bar-remaining" style="width:50%"></div>
-            </div>
-            <div class="head_left-progress-bar">
-              <div class="head_left-progress-bar-completed" style="width:0%"></div>
-              <div class="head_left-progress-bar-remaining" style="width:100%"></div>
-            </div>
-            <div class="head_left-progress-bar">
-              <div class="head_left-progress-bar-completed" style="width:0%"></div>
-              <div class="head_left-progress-bar-remaining" style="width:100%"></div>
-            </div>
-            <div class="head_left-progress-bar">
-              <div class="head_left-progress-bar-completed" style="width:0%"></div>
-              <div class="head_left-progress-bar-remaining" style="width:100%"></div>
-            </div>
-          </div>
         </div>
         <div class="benefits_inner_cards">
           <div class="benefits_inner-item">
-            <img class="benefits_inner-item-ico" src="img/index/contactsico5.svg" alt="ico">
+            <img class="benefits_inner-item-ico" src="images/index/contactsico5.svg" alt="ico">
             <div class="benefits_inner-item-text-block">
               <h5 class="benefits_inner-item-title text-bd">Печать от<span class="benefits_inner-title-red">
                   100шт</span>
@@ -128,7 +111,7 @@
             </div>
           </div>
           <div class="benefits_inner-item">
-            <img class="benefits_inner-item-ico" src="img/index/contactsico4.svg" alt="ico">
+            <img class="benefits_inner-item-ico" src="images/index/contactsico4.svg" alt="ico">
             <div class="benefits_inner-item-text-block">
               <h5 class="benefits_inner-item-title text-bd">Срочная печать<br><span class="benefits_inner-title-red">за
                   1
@@ -137,7 +120,7 @@
             </div>
           </div>
           <div class="benefits_inner-item">
-            <img class="benefits_inner-item-ico" src="img/index/contactsico2.svg" alt="ico">
+            <img class="benefits_inner-item-ico" src="images/index/contactsico2.svg" alt="ico">
             <div class="benefits_inner-item-text-block">
               <h5 class="benefits_inner-item-title text-bd"><span class="benefits_inner-title-red">Бесплатный
                 </span>макет
@@ -146,7 +129,7 @@
             </div>
           </div>
           <div class="benefits_inner-item">
-            <img class="benefits_inner-item-ico" src="img/index/contactsico3.svg" alt="ico">
+            <img class="benefits_inner-item-ico" src="images/index/contactsico3.svg" alt="ico">
             <div class="benefits_inner-item-text-block">
               <h5 class="benefits_inner-item-title text-bd">Подбор материалов<br><span
                   class="benefits_inner-title-red">под
@@ -156,10 +139,13 @@
           </div>
         </div>
         <div class="portfolio_form">
-          <img src="img/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil">
+          <img src="images/label_printing/pencil2.webp" alt="" class="portfolio_form-pencil"
+            data-src-desktop="images/label_printing/pencil2.webp"
+            data-src-tablet="images/label_printing/pencil2780.webp"
+            data-src-mobile="images/label_printing/pencil2380.webp" />
           <div class="portfolio_form-inner">
             <div class="portfolio_form-left">
-              <h2 class="portfolio_form-title sub-headers">Свяжитесь<br>с нами</h2>
+              <h2 class="portfolio_form-title sub-headers">Свяжитесь с нами</h2>
               <p class="portfolio_form-policy">
                 Нажимая «Отправить»,<br>
                 вы соглашаетесь с<br>
@@ -177,6 +163,12 @@
                 <a href="#" class="portfolio_form-btn">Отправить</a>
               </form>
             </div>
+            <p class="portfolio_form-policy portfolio_form-policy-mobile">
+              <span class="policy-line">Нажимая «Отправить»,</span>
+              <span class="policy-line policy-line--nowrap">
+                вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+              </span>
+            </p>
           </div>
         </div>
       </div>
@@ -186,7 +178,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer_inner">
-        <img class="footer_logo" src="img/index/logoart.webp" alt="logo">
+        <img class="footer_logo" src="images/index/logoart.webp" alt="logo">
         <div class="footer_inner-service">
           <h6 class="footer_inner-service-title">Услуги</h6>
           <ul class="footer_inner-service-list">
@@ -228,6 +220,8 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
